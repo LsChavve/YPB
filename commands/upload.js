@@ -62,7 +62,7 @@ export default {
       option.setName('image').setDescription('Gambar jadwal (.jpg)').setRequired(true))
     .addStringOption(option =>
       option.setName('kelas').setDescription('Pilih kelas kamu').setRequired(true)
-        .addChoices(...classChoices.map(c => ({ name: c, value: c })))
+        .addChoices(...classChoices)
     ),
 
   async execute(interaction) {
